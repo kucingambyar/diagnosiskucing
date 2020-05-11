@@ -1,0 +1,10 @@
+DiseaseId,DiseaseName,DiseaseCause,DiseaseSolution,DiseaseImage
+P1,Scabies,Penularan karena terkena kucing lain;Tungau yang bertebaran,Pisahkan dengan kucing lain;Cuci kucingmu,https://i0.wp.com/meongku.com/wp-content/uploads/2015/01/scabies-pada-kucing.jpg
+P2,Gastritis,
+P3,Helminthiasis,
+P4,Rhintis,
+P5,Dermatophytosis,
+P6,Dermatitis,
+P7,Enteritis,
+P8,Otitis,
+P9,Sehat,
