@@ -12,7 +12,7 @@ import pandas
 # In[2]:
 
 
-file = "dataset.csv"
+file = "../data/dataset.csv"
 data = pandas.read_csv(file)
 data.head()
 
@@ -55,9 +55,9 @@ with open('model.pkl','wb') as m:
 # In[8]:
 
 
-file = "disease.csv"
+file = "../data/disease.csv"
 labels = pandas.read_csv(file)
-labels
+labels.head()
 
 
 # In[9]:
