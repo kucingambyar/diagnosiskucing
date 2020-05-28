@@ -48,8 +48,7 @@ confidence
 # In[7]:
 
 
-with open('model.pkl','wb') as m:
-    pickle.dump(model,m)
+pickle.dump(model, open('model.pkl','wb'))
 
 
 # In[8]:
@@ -63,8 +62,7 @@ labels.head()
 # In[9]:
 
 
-with open('model.pkl', 'rb') as m:
-    model2 = pickle.load(m)
+model2 = pickle.load(open('model.pkl', 'rb'))
 
 
 # In[10]:
@@ -72,9 +70,8 @@ with open('model.pkl', 'rb') as m:
 
 predicted= model2.predict([[1,1,0,1,1,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,1]])
 predicted_labels = predicted.tolist()
-for label in predicted_labels:
-    label_name = labels.loc[labels['DiseaseId'] == label]['DiseaseName'][0]
-    print(label_name)
+label_name = [labels.loc[labels['DiseaseId'] == label]['DiseaseName'][0] for label in predicted_labels]
+print(label_name[0])
 
 
 # In[11]:
